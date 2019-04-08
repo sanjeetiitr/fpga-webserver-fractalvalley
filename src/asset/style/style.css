@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+.header-mp{
+    height: 60px;
+    background-color: #ffffff !important;
+    display: table-cell;
+    width: 100vw;
+}
+.logo-mp{
+    height: 40px;
+    width : 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.profile-img-mp{
+    margin-top: 10px !important;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(52,49,74,0.32);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(52,49,74,0.32);
+    box-shadow: 0px 0px 28px 0px rgba(52,49,74,0.32);
+    background-color: #686af3 !important;
+}
+
+.profile-icon-mp{
+    font-size: 1rem !important;
+    padding-left: 3%;
+}
+
+
+.content-mp{
+    height: auto !important;
+    display: flex !important;
+    background-color: none !important;
+}
+
+.content-1-mp{
+    height: auto !important;
+    color: #eeeff8 !important;
+    background-color: #eeeff8;
+}
+
+.content-2-mp{
+    height: auto;
+    background-color: #eeeff8;
+}
+.ant-card-body{
+    padding: 10px !important;
+    font-size: .8rem;    
+}
+
+
+.scanner-mp{
+    height: auto;
+    background-color:  white;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.ant-card-cover{
+    border: 5px solid #ffffff;
+}
+.header-fixed-mp{
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.scanner-heading-mp{
+    text-align: center;
+    font-size: 1rem;    
+}
+
+
+
+.content-view-controls-mp{
+    height: 85vh;
+    width: 100%;
+    background-color: white;
+    border-right: 1px solid #f5f5f5;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+
+
+.content-view-main-mp{
+    background-color: white;
+}
+
+#test{
+    height: 175px;
+}
+
+.nav-mp{
+    height : 100%;
+    width : 100%;
+}
+
+.ant-slider-mark{
+    font-size : 0.6rem !important;
+}
+
+.ant-slider-vertical .ant-slider-mark{
+    left: 6px !important;
+    width: 15px !important;
+}
+
+.ant-slider-vertical{
+    margin: 25px 6px !important;
+    padding: 0 0px !important;
+}
+
+.ol-overviewmap-box{
+    background-color: blue;
+    opacity: .4;
+}
+
+.ant-divider-horizontal{
+    margin: 5px 0 !important;
+}
+
+.logo-mp{
+    background-image: url(../img/logo-05.png);
+}
+
+.ol-control{
+    position: unset !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.ol-control button{
+    height: 2rem !important;
+    width: 100% !important ;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+
+#map2 .ol-zoom .ol-zoom-out {
+    margin-top: 204px;
+}
+
+#map2 .ol-zoomslider {
+  background-color: transparent;
+  top: 2.3em;
+}
+
+#map2 .ol-touch .ol-zoom .ol-zoom-out {
+  margin-top: 212px;
+}
+#map2 .ol-touch .ol-zoomslider {
+  top: 2.75em;
+}
+
+#map2 .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
+#map2 .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+  top: 3px;
+}
+
+#map2 .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
+#map2 .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+  top: 232px;
+}
+
+
+
+.ol-zoom{
+    background-color: #01233F !important;
+}
+
+.ol-full-screen{
+    background-color: #01233F !important;
+}
+
+.content-view-controls-mp{
+    background-color: #01233F !important;
+}
+
+.ant-slider-mark-text{
+    color : white !important ;
+}
+
+.profile-img-mp{
+    background-color: #01233F !important;
+}
