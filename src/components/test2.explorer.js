@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'antd';
+import { Col, Row ,Button,Icon} from 'antd';
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import XYZ from 'ol/source/XYZ.js';
@@ -129,6 +129,15 @@ export class Test2PublicMap extends Component {
         this.viewer.getView().setRotation(value * Math.PI / 180)
     }
 
+    goFullScreen(){
+        var canvas = document.getElementById("canvas");
+        if(canvas.requestFullScreen)
+            canvas.requestFullScreen();
+        else if(canvas.webkitRequestFullScreen)
+            canvas.webkitRequestFullScreen();
+        else if(canvas.mozRequestFullScreen)
+            canvas.mozRequestFullScreen();
+    }
 
     render() {
         this.updateMap();
@@ -136,7 +145,8 @@ export class Test2PublicMap extends Component {
             <Row>
                 <Col sm={{ span: 1, offset: 0 }} mg={{ span: 1, offset: 0 }} lg={{ span: 1, offset: 0 }} xl={{ span: 1, offset: 0 }} className="content-view-controls-mp">
                     <div id="zoom-mp"></div>
-                    <div id="fs-mp"></div>
+                    {/* <div id="fs-mp"></div> */}
+                    <Button onClick={()=> this.goFullScreen()} className="btn-fs-mp"><Icon type="fullscreen" /></Button>
                     <Slider defaultValue={0} vertical marks={marks} onChange={this.slider} min={0} max={360} style={{ height: '54%', marginTop: "25% !important" }} />
                 </Col>
                 <Col id="map2" sm={{ span: 23, offset: 0 }} mg={{ span: 23, offset: 0 }} lg={{ span: 23, offset: 0 }} xl={{ span: 23, offset: 0 }} style={{ height: "85vh" }} className="content-view-main-mp">

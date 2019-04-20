@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'antd';
+import { Col, Row, Button , Icon} from 'antd';
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import XYZ from 'ol/source/XYZ.js';
@@ -60,6 +60,7 @@ export class TestPublicMap extends Component {
                 minZoom: 0,
             })
         });
+        // this.goFullScreen = this.goFullScreen.bind(this)
     }
 
     updateMap() {
@@ -79,7 +80,7 @@ export class TestPublicMap extends Component {
 
 
         // var background = new Image();
-        var background = "http://i.imgur.com/yf6d9SX.jpg";
+        var background = `http://fractalvalley.net/img?json={%22x%22:0,%22y%22:0,%22pix_x%22:0.015625,%22pix_y%22:0.015625,%22width%22:${width},%22height%22:${height},%22max_depth%22:1225,%22test_flags%22:0,%22darken%22:true,%22brighten%22:0,%22modes%22:66,%22colors%22:2,%22texture%22:0,%22edge%22:0,%22var1%22:0,%22var2%22:0,%22renderer%22:%22cpp%22,%22theme%22:0,%22test_vars%22:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],%22three_d%22:false,%22offset_w%22:0,%22offset_h%22:0,%22eye_sep%22:0,%22eye_adjust%22:0}`;
         canvas.setBackgroundImage(background, canvas.renderAll.bind(canvas));
         canvas.setDimensions({width:width, height:height});
         // var canvas = document.getElementById("canvas"),
@@ -88,8 +89,11 @@ export class TestPublicMap extends Component {
         canvas.on('mouse:dblclick', (e)=>{
             console.log(e , 'mousedblclick')
         })
+        canvas.on('dragenter', (e)=>{
+            console.log(e , 'drag')
+        })
         
-        // background.onload = function(){
+        // background.onload = function(){  
         //     ctx.drawImage(background,0,0);   
             
         // }
@@ -126,6 +130,15 @@ export class TestPublicMap extends Component {
         this.viewer.getView().setRotation(value * Math.PI / 180)
     }
 
+    goFullScreen(){
+        var canvas = document.getElementById("canvas");
+        if(canvas.requestFullScreen)
+            canvas.requestFullScreen();
+        else if(canvas.webkitRequestFullScreen)
+            canvas.webkitRequestFullScreen();
+        else if(canvas.mozRequestFullScreen)
+            canvas.mozRequestFullScreen();
+    }
 
     render() {
         this.updateMap();
@@ -133,7 +146,8 @@ export class TestPublicMap extends Component {
             <Row>
                 <Col sm={{ span: 1, offset: 0 }} mg={{ span: 1, offset: 0 }} lg={{ span: 1, offset: 0 }} xl={{ span: 1, offset: 0 }} className="content-view-controls-mp">
                     <div id="zoom-mp"></div>
-                    <div id="fs-mp"></div>
+                    {/* <div  id="fs-mp"></div> */}
+                    <Button onClick={()=> this.goFullScreen()} className="btn-fs-mp"><Icon type="fullscreen" /></Button>
                     <Slider defaultValue={0} vertical marks={marks} onChange={this.slider} min={0} max={360} style={{ height: '54%', marginTop: "25% !important" }} />
                 </Col>
                 <Col id="map2" sm={{ span: 23, offset: 0 }} mg={{ span: 23, offset: 0 }} lg={{ span: 23, offset: 0 }} xl={{ span: 23, offset: 0 }} style={{ height: "85vh" }} className="content-view-main-mp">

@@ -203,3 +203,18 @@
     height: 97.5%;
     width: 100%
 }
+.imagesContainer[_ngcontent-c0]{
+    padding: 0;
+    border: none;
+}
+.btn-fs-mp{
+    width: 100%;
+    border: none !important;
+    border-radius: 0px !important;
+    background-color: rgba(0,60,136,0.5) !important;
+    padding: none !important;
+}
+.btn-fs-mp > i {
+    text-align: center;
+    color: white;
+}
