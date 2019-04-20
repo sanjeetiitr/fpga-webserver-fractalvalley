@@ -197,3 +197,9 @@
 .profile-img-mp{
     background-color: #01233F !important;
 }
+
+
+#imagesContainer{
+    height: 97.5%;
+    width: 100%
+}
