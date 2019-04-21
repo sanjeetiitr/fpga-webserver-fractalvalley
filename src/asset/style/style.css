@@ -218,3 +218,6 @@
     text-align: center;
     color: white;
 }
+.mat-card-image{
+    height: 100%;
+}
