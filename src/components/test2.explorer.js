@@ -62,6 +62,7 @@ export class Test2PublicMap extends Component {
                 minZoom: 0,
             })
         });
+        this.goFullScreen = this.goFullScreen.bind(this)
     }
 
     updateMap() {
@@ -130,7 +131,7 @@ export class Test2PublicMap extends Component {
     }
 
     goFullScreen(){
-        var canvas = document.getElementById("canvas");
+        var canvas = document.getElementById("map2");
         if(canvas.requestFullScreen)
             canvas.requestFullScreen();
         else if(canvas.webkitRequestFullScreen)
