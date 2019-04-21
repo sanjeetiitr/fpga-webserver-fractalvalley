@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { HeaderComp } from '../components/header';
-import { ExplorerContent } from './exolorerContainer.view';
 import { Test2ExplorerContent } from './test2.explorerContent';
 
 

@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import { HeaderComp } from '../components/header';
-import { ExplorerContent } from './exolorerContainer.view';
-import { TestExplorerContent } from './test.explorerContent';
 import { Button } from 'antd';
 import {Link} from 'react-router-dom';
 

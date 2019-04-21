@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
 import {Row , Col, Affix} from 'antd';
-import { PublicMap } from '../components/explorer';
-import { PreviewComp } from '../components/preview';
 import { SlideInfoComp } from '../components/slide.info';
 import { Test2PublicMap } from '../components/test2.explorer';
 
