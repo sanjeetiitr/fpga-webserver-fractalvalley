@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Dropdown, Menu, Icon, Avatar } from "antd";
+import {Link} from 'react-router-dom';
 
 
 export class HeaderComp extends Component {
@@ -13,8 +14,10 @@ export class HeaderComp extends Component {
             mg={{ span: 4, offset: 1 }}
             lg={{ span: 4, offset: 1 }}
             xl={{ span: 4, offset: 1 }}
-          >
+          >   
+              <Link to='/'>
               <div className="logo-mp" />
+              </Link>
           </Col>
           <Col
             sm={{ span: 8, offset: 2 }}
