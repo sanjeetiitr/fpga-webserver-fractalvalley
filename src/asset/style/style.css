@@ -256,10 +256,11 @@
     color : white;
     border: none;
 }
-.exp-btn :hover {
+.exp-btn:hover {
     /* text-align : "center"; */
-    background-color : #F65301 !important;
-    transform: scale(1.1) ;
+    /* background-color : #F65301 !important; */
+    transform: scale(1.05);
     color : white;
+    font-weight: 500;
     border: none;
 }
