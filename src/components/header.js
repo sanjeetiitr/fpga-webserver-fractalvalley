@@ -21,6 +21,7 @@ export class HeaderComp extends Component {
               </Link>
           </Col>
           <Col
+            className="nav-pad"
             sm={{ span: 2, offset: 6 }}
             mg={{ span: 2, offset: 6 }}
             lg={{ span: 2, offset: 6 }}
@@ -37,6 +38,7 @@ export class HeaderComp extends Component {
             <span style={{textAlign : "center"}}>Docs</span>
           </Col> */}
           <Col
+            className="nav-pad"
             sm={{ span: 2, offset: 1 }}
             mg={{ span: 2, offset: 1 }}
             lg={{ span: 2, offset: 1 }}
@@ -45,6 +47,7 @@ export class HeaderComp extends Component {
             <p style={{textAlign : "center"}}>Community</p>
           </Col>
           <Col
+            className="nav-pad"
             sm={{ span: 2, offset: 1 }}
             mg={{ span: 2, offset: 1 }}
             lg={{ span: 2, offset: 1 }}
@@ -53,6 +56,7 @@ export class HeaderComp extends Component {
             <Button style={{textAlign : "center"}}>Explorer</Button>
           </Col>
           <Col
+            className="nav-pad"
             sm={{ span: 1, offset: 1 }}
             mg={{ span: 1, offset: 1 }}
             lg={{ span: 1, offset: 1 }}
