@@ -53,7 +53,7 @@ export class HeaderComp extends Component {
             lg={{ span: 2, offset: 1 }}
             xl={{ span: 2, offset: 1 }}
           >
-            <Button style={{textAlign : "center"}}>Explorer</Button>
+            <Button className="exp-btn">Explorer</Button>
           </Col>
           <Col
             className="nav-pad"
@@ -63,13 +63,14 @@ export class HeaderComp extends Component {
             xl={{ span: 1, offset: 1 }}
             style={{ textAlign: "center" }}
           >
-            <Avatar className="profile-img-mp">
+            <Button style={{textAlign : "center"}}>Login</Button>
+            {/* <Avatar className="profile-img-mp">
               <span style={{ fontSize: "1rem", textTransform: "capitalize" }}>
                 Sanjeet
               </span>
-            </Avatar>
+            </Avatar> */}
           </Col>
-          <Col
+          {/* <Col
             sm={{ span: 3, offset: 0 }}
             mg={{ span: 3, offset: 0 }}
             lg={{ span: 3, offset: 0 }}
@@ -91,7 +92,7 @@ export class HeaderComp extends Component {
                 <Icon className="profile-icon-mp" type="down" />
               </h3>
             </Dropdown>
-          </Col>
+          </Col> */}
         </Row>
       </div>
     );

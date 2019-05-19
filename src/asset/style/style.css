@@ -249,3 +249,17 @@
 .h-s1 > span {
     padding-right: 5%;
 }
+
+.exp-btn {
+    text-align : "center";
+    background-color : #F65301 !important;
+    color : white;
+    border: none;
+}
+.exp-btn :hover {
+    /* text-align : "center"; */
+    background-color : #F65301 !important;
+    transform: scale(1.1) ;
+    color : white;
+    border: none;
+}
