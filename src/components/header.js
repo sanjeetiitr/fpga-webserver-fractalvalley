@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Dropdown, Menu, Icon, Avatar } from "antd";
 import {Link} from 'react-router-dom';
+import { Button } from "antd/lib/radio";
 
 
 export class HeaderComp extends Component {
@@ -20,17 +21,42 @@ export class HeaderComp extends Component {
               </Link>
           </Col>
           <Col
-            sm={{ span: 8, offset: 2 }}
-            mg={{ span: 8, offset: 2 }}
-            lg={{ span: 8, offset: 2 }}
-            xl={{ span: 8, offset: 2 }}
+            sm={{ span: 2, offset: 6 }}
+            mg={{ span: 2, offset: 6 }}
+            lg={{ span: 2, offset: 6 }}
+            xl={{ span: 2, offset: 6 }}
           >
+            <div style={{textAlign : "center"}}>About</div>
+          </Col>
+          {/* <Col
+            sm={{ span: 2, offset: 1 }}
+            mg={{ span: 2, offset: 1 }}
+            lg={{ span: 2, offset: 1 }}
+            xl={{ span: 2, offset: 1 }}
+          >
+            <span style={{textAlign : "center"}}>Docs</span>
+          </Col> */}
+          <Col
+            sm={{ span: 2, offset: 1 }}
+            mg={{ span: 2, offset: 1 }}
+            lg={{ span: 2, offset: 1 }}
+            xl={{ span: 2, offset: 1 }}
+          >
+            <p style={{textAlign : "center"}}>Community</p>
           </Col>
           <Col
-            sm={{ span: 1, offset: 4 }}
-            mg={{ span: 1, offset: 4 }}
-            lg={{ span: 1, offset: 4 }}
-            xl={{ span: 1, offset: 4 }}
+            sm={{ span: 2, offset: 1 }}
+            mg={{ span: 2, offset: 1 }}
+            lg={{ span: 2, offset: 1 }}
+            xl={{ span: 2, offset: 1 }}
+          >
+            <Button style={{textAlign : "center"}}>Explorer</Button>
+          </Col>
+          <Col
+            sm={{ span: 1, offset: 1 }}
+            mg={{ span: 1, offset: 1 }}
+            lg={{ span: 1, offset: 1 }}
+            xl={{ span: 1, offset: 1 }}
             style={{ textAlign: "center" }}
           >
             <Avatar className="profile-img-mp">

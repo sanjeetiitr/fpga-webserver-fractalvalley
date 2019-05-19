@@ -222,3 +222,14 @@
     height: 100%;
 }
 
+
+.h-s1{
+    height: 100px;
+}
+
+.h-logo{
+    background-image: url(../img/logo-06.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height : 100%;
+}
