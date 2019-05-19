@@ -257,10 +257,45 @@
     border: none;
 }
 .exp-btn:hover {
-    /* text-align : "center"; */
-    /* background-color : #F65301 !important; */
     transform: scale(1.05);
     color : white;
     font-weight: 500;
     border: none;
+}
+.login-btn{
+    text-align : "center";
+    background-color : #02233F !important;
+    color : white;
+    border: none;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+    color : white;
+    font-weight: 500;
+    border: none;
+}
+
+.bt1-btn{
+    text-align : "center";
+    background-color : #02233F !important;
+    color : white !important;
+    border: none !important;
+}
+
+.bt2-btn {
+    text-align : "center";
+    background-color : #F65301 !important;
+    color : white !important;
+    border: none !important;
+}
+
+.bt1-btn:hover{
+    color : white !important;
+    border: none !important;
+}
+
+.bt2-btn:hover{
+    color : white !important;
+    border: none !important;
 }

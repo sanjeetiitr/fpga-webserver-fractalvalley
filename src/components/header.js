@@ -22,12 +22,12 @@ export class HeaderComp extends Component {
           </Col>
           <Col
             className="nav-pad"
-            sm={{ span: 2, offset: 6 }}
-            mg={{ span: 2, offset: 6 }}
-            lg={{ span: 2, offset: 6 }}
-            xl={{ span: 2, offset: 6 }}
+            sm={{ span: 2, offset: 8 }}
+            mg={{ span: 2, offset: 8 }}
+            lg={{ span: 2, offset: 8 }}
+            xl={{ span: 2, offset: 8 }}
           >
-            <div style={{textAlign : "center"}}>About</div>
+            <p style={{textAlign : "center"}}>About</p>
           </Col>
           {/* <Col
             sm={{ span: 2, offset: 1 }}
@@ -39,10 +39,10 @@ export class HeaderComp extends Component {
           </Col> */}
           <Col
             className="nav-pad"
-            sm={{ span: 2, offset: 1 }}
-            mg={{ span: 2, offset: 1 }}
-            lg={{ span: 2, offset: 1 }}
-            xl={{ span: 2, offset: 1 }}
+            sm={{ span: 2, offset: 0 }}
+            mg={{ span: 2, offset: 0 }}
+            lg={{ span: 2, offset: 0 }}
+            xl={{ span: 2, offset: 0 }}
           >
             <p style={{textAlign : "center"}}>Community</p>
           </Col>
@@ -57,13 +57,13 @@ export class HeaderComp extends Component {
           </Col>
           <Col
             className="nav-pad"
-            sm={{ span: 1, offset: 1 }}
-            mg={{ span: 1, offset: 1 }}
-            lg={{ span: 1, offset: 1 }}
-            xl={{ span: 1, offset: 1 }}
+            sm={{ span: 2, offset: 0 }}
+            mg={{ span: 2, offset: 0 }}
+            lg={{ span: 2, offset: 0 }}
+            xl={{ span: 2, offset: 0 }}
             style={{ textAlign: "center" }}
           >
-            <Button style={{textAlign : "center"}}>Login</Button>
+            <Button style={{textAlign : "center"}} className="login-btn">Login</Button>
             {/* <Avatar className="profile-img-mp">
               <span style={{ fontSize: "1rem", textTransform: "capitalize" }}>
                 Sanjeet

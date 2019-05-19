@@ -27,7 +27,7 @@ export class HomeSec1 extends Component {
                     xl={{ span: 10, offset: 1 }}
                 >
                     <h1>Explore the world of <span style={{ color: '#F65301' }}>fractals</span> at light speed</h1>
-                    <span><Button size='large'>What is FV?</Button ></span><span><Button size='large'>Visit Github</Button></span>
+                    <span><Button size='large' className="bt1-btn" >What is FV?</Button ></span><span><Button size='large' className="bt2-btn">Visit Github</Button></span>
                 </Col>
                 <Col
                     sm={{ span: 16, offset: 4 }}
