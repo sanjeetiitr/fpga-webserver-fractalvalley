@@ -228,6 +228,14 @@
     height: 300px;
 }
 
+
+
+.h-s2{
+    margin-top: 3%;
+    height: 350px;
+}
+
+
 .h-logo{
     background-image: url(../img/logo-06.png);
     background-repeat: no-repeat;
@@ -298,4 +306,21 @@
 .bt2-btn:hover{
     color : white !important;
     border: none !important;
+}
+
+.blue-crd{
+    height: 80%;
+    background-color: #02233F;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blue-crd > div {
+    padding: 8%;
+    height: 100%;
+    color: white
+}
+
+.blue-crd > div > h2 {
+    color: white !important;
 }
