@@ -18,7 +18,7 @@ export class HomeSec3 extends Component {
                         lg={{ span: 12, offset: 2 }}
                         xl={{ span: 12, offset: 2 }}
                     >
-                            <h1>Mandelbrot Explorer</h1>
+                            <h1>Mandelbrot <span style={{color : "#F65301"}}>Explorer</span></h1>
                             <p>A fun little demo of some game-changing technologies</p>
                             <Button size='large' className="bt2-btn"> Explore Now</Button>
                     </Col>
