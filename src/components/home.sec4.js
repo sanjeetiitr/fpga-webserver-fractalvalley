@@ -78,6 +78,14 @@ export class HomeSec4 extends Component {
                             <Icon style={{position: 'absolute', margin : 0 , fontSize: '2rem' ,top: '40%'}} type="right-circle"/>
                         </div>
                     </Col>
+                    <Col 
+                        sm={{ span: 2, offset: 10 }}
+                        mg={{ span: 2, offset: 10 }}
+                        lg={{ span: 2, offset: 10 }}
+                        xl={{ span: 2, offset: 10 }}
+                    >
+                        <Button size='large' className="bt2-btn" style={{textAlign : "center", width: '100%'}}> Explore Now</Button>
+                    </Col>
                 </div>
             </Row>
         )
