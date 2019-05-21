@@ -75,7 +75,7 @@ export class HomeSec4 extends Component {
                         xl={{ span: 1, offset: 1 }}
                     >
                         <div>
-                            <Icon style={{position: 'absolute', margin : 0   }} type="right-circle" />
+                            <Icon style={{position: 'absolute', margin : 0 , fontSize: '2rem' ,top: '40%'}} type="right-circle"/>
                         </div>
                     </Col>
                 </div>
