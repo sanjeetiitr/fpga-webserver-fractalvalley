@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Dropdown, Menu, Icon, Avatar } from "antd";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button } from "antd/lib/radio";
 
 
@@ -15,10 +15,10 @@ export class HeaderComp extends Component {
             mg={{ span: 4, offset: 1 }}
             lg={{ span: 4, offset: 1 }}
             xl={{ span: 4, offset: 1 }}
-          >   
-              <Link to='/'>
+          >
+            <Link to='/'>
               <div className="logo-mp" />
-              </Link>
+            </Link>
           </Col>
           <Col
             className="nav-pad"
@@ -27,7 +27,7 @@ export class HeaderComp extends Component {
             lg={{ span: 2, offset: 8 }}
             xl={{ span: 2, offset: 8 }}
           >
-            <p style={{textAlign : "center"}}>About</p>
+            <p style={{ textAlign: "center" }}>About</p>
           </Col>
           {/* <Col
             sm={{ span: 2, offset: 1 }}
@@ -44,7 +44,7 @@ export class HeaderComp extends Component {
             lg={{ span: 2, offset: 0 }}
             xl={{ span: 2, offset: 0 }}
           >
-            <p style={{textAlign : "center"}}>Community</p>
+            <p style={{ textAlign: "center" }}>Community</p>
           </Col>
           <Col
             className="nav-pad"
@@ -53,7 +53,9 @@ export class HeaderComp extends Component {
             lg={{ span: 2, offset: 1 }}
             xl={{ span: 2, offset: 1 }}
           >
-            <Button className="exp-btn">Explorer</Button>
+            <Link to='/select'>
+              <Button className="exp-btn">Explorer</Button>
+            </Link>
           </Col>
           <Col
             className="nav-pad"
@@ -63,7 +65,7 @@ export class HeaderComp extends Component {
             xl={{ span: 2, offset: 0 }}
             style={{ textAlign: "center" }}
           >
-            <Button style={{textAlign : "center"}} className="login-btn">Login</Button>
+            <Button style={{ textAlign: "center" }} className="login-btn">Login</Button>
             {/* <Avatar className="profile-img-mp">
               <span style={{ fontSize: "1rem", textTransform: "capitalize" }}>
                 Sanjeet

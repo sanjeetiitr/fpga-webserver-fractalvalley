@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <Router history={historyFV}>
         <Switch>
-          <Route exact path='/' component={SelectOptionsView} />
-          <Route path="/home" component={HomePage} />
+          <Route path='/select' component={SelectOptionsView} />
+          <Route exact path="/" component={HomePage} />
           <Route path='/explorer' component={ExplorerView} />
           <Route path='/test' component={TestView} />
           <Route path='/test2' component={Test2View} />
