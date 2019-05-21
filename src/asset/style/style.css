@@ -235,6 +235,16 @@
     height: 350px;
 }
 
+.h-s3{
+    margin-top: 4%;
+    height: 300px;
+}
+
+.h-s3-bg{
+    background-color: #01233F;
+    
+}
+
 
 .h-logo{
     background-image: url(../img/logo-06.png);
@@ -313,6 +323,8 @@
     background-color: #02233F;
     border-radius: 5px;
     position: relative;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .blue-crd > div {
@@ -323,4 +335,18 @@
 
 .blue-crd > div > h2 {
     color: white !important;
+}
+
+.h-s3-content > h1 {
+    font-size: 2.5rem ;
+    color: #ffffff !important;
+}
+
+.h-s3-content > p {
+    font-size: 1.5rem ;
+    color: #ffffff !important;
+}
+
+.h-s3-content {
+    height: 100%;
 }

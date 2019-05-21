@@ -35,7 +35,7 @@ export class HomeSec1 extends Component {
                     lg={{ span: 16, offset: 4 }}
                     xl={{ span: 16, offset: 4 }}
                 >
-                    <h2 style={{textAlign : 'center'}}>Fractal Valley is an open-source Fractal project and a development vehicle for emerging technologies.</h2>
+                    <h2 style={{textAlign : 'center', marginTop : "5%"}}>Fractal Valley is an open-source Fractal project and a development vehicle for emerging technologies.</h2>
                 </Col>
             </Row>
         )
